@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+.next/
+out/
+coverage/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary files
+tmp/
+temp/
+
+# Local databases / generated data
+*.db
+*.sqlite
+*.sqlite3
+
+# Neo4j local data
+neo4j/data/
+neo4j/logs/
+neo4j/import/
+neo4j/plugins/

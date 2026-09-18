@@ -1,7 +1,7 @@
 import { parse as parseYaml } from 'yaml';
-import { KnowledgeFormatError, KnowledgeValidationError } from './errors.js';
-import { knowledgeMetadataSchema } from './schema.js';
-import type { KnowledgeMetadata } from './schema.js';
+import { KnowledgeFormatError, KnowledgeValidationError } from './errors.ts';
+import { knowledgeMetadataSchema } from './schema.ts';
+import type { KnowledgeMetadata } from './schema.ts';
 import type { ZodIssue } from 'zod';
 
 export interface ParsedKnowledgeDocument {

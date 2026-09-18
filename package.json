@@ -9,7 +9,8 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "knowledge:validate": "node src/cli/knowledge-validate.ts"
   },
   "devDependencies": {
     "@types/node": "^24.13.5",

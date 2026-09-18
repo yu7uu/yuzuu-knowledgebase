@@ -7,7 +7,7 @@ import {
   KnowledgeValidationError,
   loadKnowledgeFile,
   parseKnowledgeDocument,
-} from './index.js';
+} from './index.ts';
 
 const baseMetadata = {
   id: 'yz-test-item',

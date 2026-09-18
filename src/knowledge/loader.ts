@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
-import { parseKnowledgeDocument } from './parse.js';
-import type { ParsedKnowledgeDocument } from './parse.js';
+import { parseKnowledgeDocument } from './parse.ts';
+import type { ParsedKnowledgeDocument } from './parse.ts';
 
 export interface KnowledgeDocument extends ParsedKnowledgeDocument {
   filePath: string;

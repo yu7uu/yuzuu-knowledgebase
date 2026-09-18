@@ -1,8 +1,11 @@
-export { KnowledgeFormatError, KnowledgeValidationError } from './errors.js';
-export { loadKnowledgeFile } from './loader.js';
-export type { KnowledgeDocument } from './loader.js';
-export { parseKnowledgeDocument } from './parse.js';
-export type { ParsedKnowledgeDocument } from './parse.js';
+export { KnowledgeFormatError, KnowledgeValidationError } from './errors.ts';
+export { discoverKnowledgeFiles } from './discover.ts';
+export { loadKnowledgeFile } from './loader.ts';
+export type { KnowledgeDocument } from './loader.ts';
+export { parseKnowledgeDocument } from './parse.ts';
+export type { ParsedKnowledgeDocument } from './parse.ts';
+export { validateKnowledgeRepository } from './repository.ts';
+export type { InvalidKnowledgeFile, KnowledgeRepositoryValidationResult } from './repository.ts';
 export {
   APPROVAL_STATUSES,
   CONFIDENCE_LEVELS,
@@ -21,7 +24,7 @@ export {
   timestampSchema,
   titleSchema,
   typeSchema,
-} from './schema.js';
+} from './schema.ts';
 export type {
   KnowledgeApproval,
   KnowledgeConfidence,
@@ -32,4 +35,4 @@ export type {
   KnowledgeStatus,
   KnowledgeType,
   RelationshipType,
-} from './schema.js';
+} from './schema.ts';

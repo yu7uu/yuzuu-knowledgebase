@@ -44,6 +44,10 @@ export interface KnowledgeGraphProjection {
   unresolvedRelationships: UnresolvedRelationshipProjection[];
 }
 
+// Alias used as the "desired state" concept for graph reconciliation.
+// A projection is always the derived representation of canonical knowledge.
+export type GraphProjection = KnowledgeGraphProjection;
+
 export interface GraphSyncReport {
   nodesProjected: number;
   nodesCreated: number;

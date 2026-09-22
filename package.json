@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "knowledge:validate": "node src/cli/knowledge-validate.ts",
-    "knowledge:graph:sync": "node --env-file-if-exists=.env src/cli/knowledge-graph-sync.ts"
+    "knowledge:graph:sync": "node --env-file-if-exists=.env src/cli/knowledge-graph-sync.ts",
+    "knowledge:graph:reconcile": "node --env-file-if-exists=.env src/cli/knowledge-graph-reconcile.ts"
   },
   "devDependencies": {
     "@types/node": "^24.13.5",

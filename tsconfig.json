@@ -16,5 +16,5 @@
     "allowImportingTsExtensions": true,
     "noEmit": true
   },
-  "include": ["vitest.config.ts", "src"]
+  "include": ["vitest.config.ts", "src", "apps/mcp-server/src"]
 }

@@ -212,11 +212,19 @@ function mapErrorToResult<T>(error: unknown): KnowledgeApiResult<T> {
  * Results are deterministic for an equivalent repository/graph state.
  */
 export class KnowledgeService {
+  private readonly canonical: CanonicalKnowledgeReader;
+  private readonly graph: GraphReader;
+  private readonly onClose?: () => Promise<void>;
+
   constructor(
-    private readonly canonical: CanonicalKnowledgeReader,
-    private readonly graph: GraphReader,
-    private readonly onClose?: () => Promise<void>,
-  ) {}
+    canonical: CanonicalKnowledgeReader,
+    graph: GraphReader,
+    onClose?: () => Promise<void>,
+  ) {
+    this.canonical = canonical;
+    this.graph = graph;
+    this.onClose = onClose;
+  }
 
   async close(): Promise<void> {
     await this.onClose?.();

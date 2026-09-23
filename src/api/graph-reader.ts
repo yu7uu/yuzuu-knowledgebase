@@ -36,7 +36,11 @@ function isGraphNode(value: unknown): value is GraphKnowledgeNode {
  * `GraphUnavailableError`; driver internals are never exposed.
  */
 export class Neo4jGraphReader implements GraphReader {
-  constructor(private readonly driver: Driver) {}
+  private readonly driver: Driver;
+
+  constructor(driver: Driver) {
+    this.driver = driver;
+  }
 
   async getRelationshipsFor(id: string): Promise<GraphRelationship[]> {
     const session = this.driver.session();

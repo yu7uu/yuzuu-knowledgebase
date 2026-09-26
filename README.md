@@ -65,6 +65,7 @@ Git Commit
 
 Repository Structure
 knowledge/       Canonical knowledge
+proposals/       Durable, versioned knowledge change proposals
 sessions/        AI session ingestion lifecycle
 graph/           Neo4j schema, migrations, and seeds
 apps/api/        Knowledge API
